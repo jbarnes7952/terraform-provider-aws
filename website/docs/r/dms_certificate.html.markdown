@@ -29,7 +29,7 @@ The following arguments are supported:
 
 * `certificate_id` - (Required) The certificate identifier.
 
-    - Must contain from 1 to 255 alphanumeric characters and hyphens.
+  - Must contain from 1 to 255 alphanumeric characters and hyphens.
 
 * `certificate_pem` - (Optional) The contents of the .pem X.509 certificate file for the certificate. Either `certificate_pem` or `certificate_wallet` must be set.
 * `certificate_wallet` - (Optional) The contents of the Oracle Wallet certificate for use with SSL. Either `certificate_pem` or `certificate_wallet` must be set.

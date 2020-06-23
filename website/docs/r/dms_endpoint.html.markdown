@@ -47,11 +47,11 @@ The following arguments are supported:
 * `elasticsearch_settings` - (Optional) Configuration block with Elasticsearch settings. Detailed below.
 * `endpoint_id` - (Required) The database endpoint identifier.
 
-    - Must contain from 1 to 255 alphanumeric characters or hyphens.
-    - Must begin with a letter
-    - Must contain only ASCII letters, digits, and hyphens
-    - Must not end with a hyphen
-    - Must not contain two consecutive hyphens
+  - Must contain from 1 to 255 alphanumeric characters or hyphens.
+  - Must begin with a letter
+  - Must contain only ASCII letters, digits, and hyphens
+  - Must not end with a hyphen
+  - Must not contain two consecutive hyphens
 
 * `endpoint_type` - (Required) The type of endpoint. Can be one of `source | target`.
 * `engine_name` - (Required) The type of engine for the endpoint. Can be one of `aurora | aurora-postgresql| azuredb | db2 | docdb | dynamodb | elasticsearch | kafka | kinesis | mariadb | mongodb | mysql | oracle | postgres | redshift | s3 | sqlserver | sybase`.

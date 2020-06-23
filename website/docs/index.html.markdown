@@ -380,15 +380,15 @@ in order to compare it with allowed or forbidden IDs.
 
 Approaches differ per authentication providers:
 
- * EC2 instance w/ IAM Instance Profile - [Metadata API](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html)
+* EC2 instance w/ IAM Instance Profile - [Metadata API](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html)
     is always used. Introduced in Terraform `0.6.16`.
- * All other providers (environment variable, shared credentials file, ...)
+* All other providers (environment variable, shared credentials file, ...)
     will try three approaches in the following order
-   * `iam:GetUser` - Typically useful for IAM Users. It also means
+  * `iam:GetUser` - Typically useful for IAM Users. It also means
       that each user needs to be privileged to call `iam:GetUser` for themselves.
-   * `sts:GetCallerIdentity` - _Should_ work for both IAM Users and federated IAM Roles,
+  * `sts:GetCallerIdentity` - _Should_ work for both IAM Users and federated IAM Roles,
       introduced in Terraform `0.6.16`.
-   * `iam:ListRoles` - This is specifically useful for IdP-federated profiles
+  * `iam:ListRoles` - This is specifically useful for IdP-federated profiles
       which cannot use `iam:GetUser`. It also means that each federated user
       need to be _assuming_ an IAM role which allows `iam:ListRoles`.
       Used in Terraform `0.6.16+`.

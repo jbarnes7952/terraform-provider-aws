@@ -99,19 +99,19 @@ The following arguments are supported:
 * `multi_az` - (Optional) Specifies if the replication instance is a multi-az deployment. You cannot set the `availability_zone` parameter if the `multi_az` parameter is set to `true`.
 * `preferred_maintenance_window` - (Optional) The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
 
-    - Default: A 30-minute window selected at random from an 8-hour block of time per region, occurring on a random day of the week.
-    - Format: `ddd:hh24:mi-ddd:hh24:mi`
-    - Valid Days: `mon, tue, wed, thu, fri, sat, sun`
-    - Constraints: Minimum 30-minute window.
+  - Default: A 30-minute window selected at random from an 8-hour block of time per region, occurring on a random day of the week.
+  - Format: `ddd:hh24:mi-ddd:hh24:mi`
+  - Valid Days: `mon, tue, wed, thu, fri, sat, sun`
+  - Constraints: Minimum 30-minute window.
 
 * `publicly_accessible` - (Optional, Default: false) Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address.
 * `replication_instance_class` - (Required) The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`
 * `replication_instance_id` - (Required) The replication instance identifier. This parameter is stored as a lowercase string.
 
-    - Must contain from 1 to 63 alphanumeric characters or hyphens.
-    - First character must be a letter.
-    - Cannot end with a hyphen
-    - Cannot contain two consecutive hyphens.
+  - Must contain from 1 to 63 alphanumeric characters or hyphens.
+  - First character must be a letter.
+  - Cannot end with a hyphen
+  - Cannot contain two consecutive hyphens.
 
 * `replication_subnet_group_id` - (Optional) A subnet group to associate with the replication instance.
 * `tags` - (Optional) A map of tags to assign to the resource.
