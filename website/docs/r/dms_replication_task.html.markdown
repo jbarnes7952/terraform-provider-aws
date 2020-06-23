@@ -40,10 +40,10 @@ The following arguments are supported:
 * `replication_instance_arn` - (Required) The Amazon Resource Name (ARN) of the replication instance.
 * `replication_task_id` - (Required) The replication task identifier.
 
-    - Must contain from 1 to 255 alphanumeric characters or hyphens.
-    - First character must be a letter.
-    - Cannot end with a hyphen.
-    - Cannot contain two consecutive hyphens.
+  - Must contain from 1 to 255 alphanumeric characters or hyphens.
+  - First character must be a letter.
+  - Cannot end with a hyphen.
+  - Cannot contain two consecutive hyphens.
 
 * `replication_task_settings` - (Optional) An escaped JSON string that contains the task settings. For a complete list of task settings, see [Task Settings for AWS Database Migration Service Tasks](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TaskSettings.html).
 * `source_endpoint_arn` - (Required) The Amazon Resource Name (ARN) string that uniquely identifies the source endpoint.

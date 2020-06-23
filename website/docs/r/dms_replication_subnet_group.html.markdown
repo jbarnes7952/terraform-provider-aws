@@ -35,8 +35,8 @@ The following arguments are supported:
 * `replication_subnet_group_description` - (Required) The description for the subnet group.
 * `replication_subnet_group_id` - (Required) The name for the replication subnet group. This value is stored as a lowercase string.
 
-    - Must contain no more than 255 alphanumeric characters, periods, spaces, underscores, or hyphens.
-    - Must not be "default".
+  - Must contain no more than 255 alphanumeric characters, periods, spaces, underscores, or hyphens.
+  - Must not be "default".
 
 * `subnet_ids` - (Required) A list of the EC2 subnet IDs for the subnet group.
 * `tags` - (Optional) A map of tags to assign to the resource.
